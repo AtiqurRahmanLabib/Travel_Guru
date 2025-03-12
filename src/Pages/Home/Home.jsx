@@ -7,7 +7,7 @@ const Home = () => {
     <div className="relative min-h-screen w-full">
       {/* Navbar */}
       <div className="relative z-20 pt-1 ">
-        <Navbar/>
+        <Navbar />
       </div>
 
       {/* Background Image with Overlay */}
@@ -19,7 +19,17 @@ const Home = () => {
 
       {/* Main Content */}
       <div className="relative z-10 flex justify-center items-center h-full">
-        <h1 className="text-white text-4xl font-bold">Welcome to Travel Guru</h1>
+
+        <div>
+          <div className="text">
+            <h1 className="text-[97.68px] text-[#FFFFFF] font-BebasNeue">Cox's bazar</h1>
+            <p className="font-montserrat text-[16px] text-white">Cox's Bazar is a city, fishing port, tourism centre and <br /> district headquarters in southeastern Bangladesh. It is <br /> famous mostly for its long natural sandy beach, and it ...</p>
+            <button className="w-[161px] h-[41px] bg-[#F9A51A] rounded-[5px] text-[16px]  font-montserrat]">Booking</button>
+          </div>
+          <div>
+
+          </div>
+        </div>
       </div>
     </div>
   );
