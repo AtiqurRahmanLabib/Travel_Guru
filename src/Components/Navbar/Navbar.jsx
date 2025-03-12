@@ -34,7 +34,7 @@ const Navbar = () => {
                     <NavLink
                         to="/destination"
                         className={({ isActive }) =>
-                            `text-[16px] font-medium font-montserrat text-center pt-2.5 ${textColor}
+                            `text-[16px] font-medium font-montserrat text-center pt-2.5 ${textColor} 
                             ${isActive ? 'text-[18px] font-medium font-montserrat text-center pt-2.5 ' : 'text-[16px] font-medium font-montserrat text-center pt-2.5 '}`
                         }
                     >
