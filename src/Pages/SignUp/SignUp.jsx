@@ -8,11 +8,14 @@ import { GoogleAuthProvider } from 'firebase/auth';
 
 
 const SignUp = () => {
+
     const { createUser, googleSignIn } = useContext(AuthContext)
     const provider = new GoogleAuthProvider();
     const navigate = useNavigate()
     const [error, setError] = useState('')
     const [success, setSuccess] = useState('')
+
+
     const handleSubmite = (e) => {
         e.preventDefault(); // Prevent form reload
         setError('')
@@ -22,13 +25,16 @@ const SignUp = () => {
         const lastName = form.get('lastName');
         const email = form.get('email');
         const password = form.get('password');
+
         console.log(firstName, lastName, email, password);
+        
         createUser(email, password)
             .then(result => {
                 console.log(result.user)
                 setSuccess('Account created successfully')
                 navigate('/home')
             })
+        
             .catch(error => {
                 console.log(error)
                 setError(error.message)
@@ -50,7 +56,7 @@ const SignUp = () => {
     return (
         <div className='items-center justify-center align-middle content-center'>
             <Navbar></Navbar>
-            <div className='w-[570px] h-[591px] border border-[#ABABAB] mx-auto items-center align-middle mt-25 rounded-[4px]'>
+            <div className='w-[570px] h-[651px] border border-[#ABABAB] mx-auto items-center align-middle mt-25 rounded-[4px]'>
                 <h1 className='font-bold font-montserrat text-[24px] text-[#000000]  top-6 left-11 relative'>Create an account</h1>
                 <form onSubmit={handleSubmite}>
                     <div className='mx-auto w-[461px]'>
@@ -98,7 +104,7 @@ const SignUp = () => {
                     <img className='w-[31px] h-[31px]' src={FacebookLogo} alt="" />
                     <h1 className=''>Contineo with Facebook</h1>
                 </div>
-                <button onClick={handleGoogleSignIn} className='flex w-[461px] h-[51px] rounded-[57px] border-[#C7C7C7] border mx-auto mt-5 items-center gap-24 pl-8'>
+                <button onClick={handleGoogleSignIn} className='flex w-[461px] h-[51px] rounded-[57px] border-[#C7C7C7] border cursor-pointer mx-auto mt-5 items-center gap-24 pl-8'>
                     <img  className='w-[31px] h-[31px]' src={GoogleLogo} alt="" />
                     <h1 className=''>Contineo with Google</h1>
                 </button>

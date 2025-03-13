@@ -1,0 +1,64 @@
+{
+    "hotels": [
+        {
+            "name": "Sreemangal Green Resort",
+            "location": "https://goo.gl/maps/Xu5f5F6kYhF2",
+            "free_services": [
+                "WiFi",
+                "Breakfast",
+                "Parking"
+            ],
+            "rooms": [
+                {
+                    "date": "2025-03-15",
+                    "available": 5,
+                    "booked": 10,
+                    "price_per_night": 4000,
+                    "beds": 2,
+                    "bathrooms": 1,
+                    "guests": 3
+                }
+            ]
+        },
+        {
+            "name": "Sundarban Eco Resort",
+            "location": "https://goo.gl/maps/Yz3F6K7mXjF3",
+            "free_services": [
+                "WiFi",
+                "Boat Ride",
+                "24/7 Support"
+            ],
+            "rooms": [
+                {
+                    "date": "2025-03-15",
+                    "available": 3,
+                    "booked": 7,
+                    "price_per_night": 5500,
+                    "beds": 3,
+                    "bathrooms": 1,
+                    "guests": 4
+                }
+            ]
+        },
+        {
+            "name": "Sajek Valley View Hotel",
+            "location": "https://goo.gl/maps/Pz4T6G8nLjF4",
+            "free_services": [
+                "WiFi",
+                "Breakfast",
+                "Hot Water"
+            ],
+            "rooms": [
+                {
+                    "date": "2025-03-15",
+                    "available": 2,
+                    "booked": 8,
+                    "price_per_night": 6000,
+                    "beds": 2,
+                    "bathrooms": 1,
+                    "guests": 3
+                }
+            ]
+        }
+    ]
+}
